@@ -10,7 +10,7 @@
 <title>JSP 종합</title>
 </head>
 <body>
-	<h2>jsp 종합에제</h2>
+	<h2>jsp 종합예제</h2>
 	<hr>
 	<!-- html용 주석 -->
 	<%-- 선언태그: 멤버변수, 메소드 선언 --%>
