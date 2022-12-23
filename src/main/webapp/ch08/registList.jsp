@@ -21,7 +21,7 @@
 		<c:forEach var="r" varStatus="i" items="${regists}">
 			<tr>
 				<td>${i.count}</td>
-				<td><a href="/jsp_study/rcontrol?action=info&name=${r.name}">${r.name}</a></td>
+				<td><a href="/jsp_study/rcontrol?action=info&id=${r.id}">${r.name}</a></td>
 				<td>${r.phone}</td>
 				<td>${r.grade}</td>
 			</tr>

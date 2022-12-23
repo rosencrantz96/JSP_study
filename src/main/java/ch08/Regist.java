@@ -18,6 +18,14 @@ public class Regist {
 		this.gradeName = gradeName;
 	}
 	
+	public String getGradeName() {
+		return gradeName;
+	}
+
+	public void setGradeName(String gradeName) {
+		this.gradeName = gradeName;
+	}
+
 	public String getId() {
 		return id;
 	}

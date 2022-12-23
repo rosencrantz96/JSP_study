@@ -50,15 +50,9 @@ public class RegistController extends HttpServlet {
 	}
 
 	private String grade(HttpServletRequest request, HttpServletResponse response) {
-		List<Regist> rlist = service.showGrade();
+		List<Regist> rlist = service.findAll();
 		request.setAttribute("regists", rlist);
 		return "grade.jsp";
-	}
-
-	private String info(HttpServletRequest request, HttpServletResponse response) {
-		Regist r = service.find(request.getParameter("name"));
-		request.setAttribute("r", r);
-		return "registInfo.jsp";
 	}
 
 	private String list(HttpServletRequest request, HttpServletResponse response) {
@@ -67,5 +61,11 @@ public class RegistController extends HttpServlet {
 		return "registList.jsp";
 	}
 
+	
+	private String info(HttpServletRequest request, HttpServletResponse response) {
+		Regist r = service.find(request.getParameter("id"));
+		request.setAttribute("r", r);
+		return "registInfo.jsp";
+	}
 
 }
